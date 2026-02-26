@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+header {
+  background-color: #c8beb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #694f3b;
+}
+
+.apresentacao {
+  background-color: #c8beb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px 0px;
+  position: relative;
+}
+
+.apresentacao h2 {
+  font-size: 24px;
+  max-width: 50%;
+}
+
+.apresentacao .platao {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: -60px;
+}
+
+.temas {
+  text-align: center;
+  padding: 20px;
+}
+
+.cards-temas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 150px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.filosofos {
+  text-align: center;
+  padding: 20px;
+}
+
+.cards-filosofos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.filosofo {
+  background-color: #c8beb3;
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.filosofo img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right:0px; 
+}
+
+.filosofo h4 {
+  margin: 10px 0 5px;
+}
+
+.filosofo p {
+  font-size: 14px;
+  font-style: italic;
+}

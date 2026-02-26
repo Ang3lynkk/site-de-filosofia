@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - FiloMundi</title>
+  <link rel="website icon" type="png" href="logo.png">
+  <link rel="stylesheet" href="/css/style3.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <img src="/img/logo.png" alt="Logo FiloMundi" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index2.html">Sobre a Matéria</a>
+      <a href="index4.html">Sobre o professor</a>
+      <a href="index3.html">Contato</a>
+    </nav>
+  </div>
+
+  <!-- Intro dentro do header -->
+  <div class="intro">
+    <h1>Explore os fundamentos do pensamento<br>filosófico através dos tempos.</h1>
+    <img src="/img/platao.png" alt="Filósofo" class="filosofo">
+  </div>
+</header>
+
+<section class="login-container">
+  <h2>Bem-vindo(a)!</h2>
+  <p>Digite seus dados para tirar sua dúvida.</p>
+
+  <form action="#" method="post">
+    <label for="login-nome">NOME:</label>
+    <input type="text" id="login-nome" name="login-nome"/>
+
+    <label for="login-duvida">SUA DÚVIDA:</label>
+    <input type="text" id="login-duvida" name="login-duvida" required />
+
+    <label for="login-matricula">MATRÍCULA:</label>
+    <input type="number" id="login-matricula" name="login-matricula" required />
+    
+    <button type="button" onclick="exibirMensagem(event)" class="btn-enviar">Enviar Dúvida</button>
+    <div class="resultado" id="saida"></div>
+    <script src="/js/script.js"></script>
+  </form>
+</section>
+
+</body>
+</html>

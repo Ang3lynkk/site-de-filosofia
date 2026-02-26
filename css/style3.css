@@ -1,0 +1,194 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #000;
+}
+
+/* ---------------------------- */
+/*           CABEÇALHO          */
+/* ---------------------------- */
+header {
+  background-color: #d6cfc3;
+  padding-bottom: 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Barra de navegação */
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a47551; /* marrom claro suave no texto */
+}
+
+/* ---------------------------- */
+/*     INTRO – TEXTO & IMAGEM   */
+/* ---------------------------- */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6cfc3;
+  padding: 25px 60px 0px; /* padding-bottom zero para reduzir altura inferior */
+  margin-bottom: -30px; /* puxa o conteúdo seguinte para cima, deixando área bege menor */
+  gap: 40px;
+}
+
+.intro h1 {
+  font-size: 26px;
+  max-width: 500px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.filosofo {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: -60px; /* imagem ainda mais no canto direito */
+}
+
+/* ---------------------------- */
+/*          FORMULÁRIO          */
+/* ---------------------------- */
+.login-container {
+  background-color: #e4e4e4;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fefefe;
+  font-size: 16px;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 14px;
+  margin-top: 30px;
+  background: rgb(189, 182, 162);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(to right, #4e4e4e, #656466);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e4e4e4;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px 0px;
+    margin-bottom: -20px; /* reduz também no mobile */
+  }
+
+  .intro h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .filosofo {
+    max-width: 80%;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .login-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
